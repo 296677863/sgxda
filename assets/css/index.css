@@ -1,0 +1,114 @@
+* {margin:0; padding:0;}
+html, body {font-family:"微软雅黑","Helvetica Neue",helvetica,Arial,'Microsoft YaHei',sans-serif; font-size:16px; -webkit-overflow-scrolling:touch;}
+a {text-decoration:none; color:#6d6b6b;}
+a:hover {color:#31302f;}
+ul, li {list-style:none;}
+img {display:block;}
+.ellipse {display:block; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.ellipse-8h {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:8;}
+.ellipse-4h {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:4; max-height:78px;}
+.ellipse-3h {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; max-height:58px;}
+.fa {width:14px; text-align:center; margin-right:10px;}
+.text {padding-left:0}
+.col-clr-pd {padding-left:0; padding-right:0;}
+.navbar-toggle {margin-top:18px;}
+.main-title-center {text-align:center; font-size:1.2em;}
+.second-title {text-align:center; margin-bottom:30px; padding:0 15px;}
+.second-title .span01{margin:0 20px;}
+.main-color {color:#205ba9;}
+.clearfix:before, .clearfix:after {   /* 清除浮动 */
+	display: table;
+	content: "";
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+@media (max-width:1366px) {
+    body {width:1366px;}
+	
+}
+
+.tophead{
+    height: 45px;
+    line-height:45px;
+    background-color: #000;
+	overflow: hidden;
+}
+.toptitle{
+	height: 45px;
+	line-height:45px;
+    font-size: 16px;
+    color: #777777;
+    padding-left: 15px;
+	float: left;
+}
+.topcontact{
+	padding-right: 15px;
+	font-size: 20px;
+	height: 45px;
+	line-height:45px;
+    color: #fff;
+    text-align: right;
+	float: right;
+	
+}
+
+.topcontact img{
+	display:inline;
+	vertical-align: middle;
+	
+}
+header{
+	height: 72px; 
+}
+nav {
+	width: 1366px; /* 宽度暂且定为1366 */
+	margin: 0px auto ; /*  盒子水平居中对齐 */
+	height: 72px; 
+	border: none;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+.navbar-header{
+	float: left;
+	height: 72px; 
+	line-height: 72px;
+    color: #333;	
+}
+.navbar-collapse {
+	float: left;
+	height: 72px;
+	line-height: 72px;  /* 这个行高给父亲， 行高会继承 */
+	margin-left: 5px;
+}
+.navbar-header img{
+	display:inline-block;
+	vertical-align: middle;
+	width:200px;
+	height:72px;
+}
+.navbar-header h1{
+	display:inline-block;
+	margin-left:10px;
+}
+.navbar-collapse li {
+	float: left;  /* 让 首页 课程 这个一行显示 */
+}
+.navbar-collapse li a {  
+	padding: 0 10px; /*  上下 0  左右 8像素 */
+	display: block; /*  a是行内元素，给高需要转换块级 */
+	height: 72px;
+	margin-left:5px;
+}
+.navbar-collapse li a:hover {
+	background-color:#000;
+	color:#fff
+}
+
+.container {  /* 因为我们的版心宽度都是1200 都要居中对齐 我们就声明一个公共类 */
+	width: 1366px;
+	margin: 0 auto;
+}
