@@ -30,6 +30,9 @@ img {display:block;}
     body {width:1366px;}
 
 }
+html{ height:100%; }
+
+body{ min-height:100%; padding:0; margin:0; position:relative; }
 
 .tophead{
     height: 45px;
@@ -114,31 +117,38 @@ nav {
 	height: 520px;
 	position: relative;
 }
-.banner ul{
+.banner .s_images{
 	width: 5760px;
 	position: absolute;
 	top:0px;
 	left: -1920px;
 }
-.banner ul li{
+.banner .s_images li{
 	float: left;
+	background-color: transparent
 }
 
 @media (max-width:1366px) {
 
 	.banner{
-
+		width: 100%;
+		overflow: hidden;
+		position: relative;
 		height: 370px;
 
 	}
-	.banner ul{
+	.banner .s_images{
 		width: 4098px;
+		position: absolute;
+		top:0px;
 		left: -1366px;
 	}
-	.banner ul li{
+	.banner .s_images li{
 		width: 1366px;
+		float: left;
+		background-color: transparent		
 	}
-	.banner ul li img{
+	.banner .s_images li img{
 		width: 1366px;
 	}
 
@@ -146,21 +156,26 @@ nav {
 }
 
 .arrow div{
-	background: #ffffff;
-	opacity: .3;
+	background: rgba(0, 0, 0, 0.5);
 	cursor: pointer;
-	color: #000000;
+	color: rgba(255, 255, 255, .6);
 	padding: 20px 10px;
-	font-size: 30px;
-	width: 27px;
-	height: 44px;
-	line-height: 44px;
+	font-size: 20px;
+	width: 30px;
+	height: 60px;
+	line-height: 60px;
+	
+	
 }
 .prev{
 
 	position: absolute;
 	left: 0px;
-	top: 50%;
+	top: 47%;
+    transform: translateY(-50%);
+    text-align: center;
+	font-family: arial;
+    font-weight: normal;
 
 
 }
@@ -168,9 +183,37 @@ nav {
 
 	position: absolute;
 	right: 0px;
-	top: 50%;
+	top: 47%;
+    transform: translateY(-50%);
+    text-align: center; 
+    font-family: arial;
+    font-weight: normal;
 
 
+}
+.banner .circle {
+    width: 68px;
+    height: 20px;
+    background: rgba(255, 255, 255, .3);
+    position: absolute;
+    left: 50%;
+    bottom:20px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding-left: 8px;
+}
+.banner .circle li {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.banner .circle .current {
+    background-color: #f10215;
 }
 
 .xinda-product{
@@ -201,11 +244,12 @@ nav {
 
 .xinda-biz div>h5{
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 2px;
 }
 
 .xinda-biz div>h5>img{
 	margin: 0 auto;
+	width: 80px;
 }
 
 
@@ -225,8 +269,148 @@ nav {
 	font-size: 2em;
 	margin: 0 0 10px;
 }
+.xinda-customer{
+	margin-top:30px;
+}
+.brand-cont-title{
+	font-size: 1.5em;
+    margin: 10px 0 30px;
+	text-align:center;
+}
+
+.brand-desc{
+	text-align:center;
+	overflow: hidden;
+    color: #787878;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+	margin-bottom:20px;
+}
+
+.xinda-service{
+	background: #333;
+	padding-bottom: 30px;
+}
+
+.xinda-service .main-title {
+	color: #fff;
+}
+
+.xinda-service-content{
+	width: 1366px; /* 宽度暂且定为1366 */
+	margin: 0px auto ; /*  盒子水平居中对齐 */
+	overflow: hidden;
+}
+
+.xinda-service-content div{
+	margin-left: 10px;
+	width:260px;
+	float: left;
+	margin: 0 2%;
+    background: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 8px rgba(1, 31, 132, 0.2);
+
+
+}
+
+.xinda-choose-content>p {
+    font-size: 1.5em;
+    color: #000;
+}
+
+.xinda-choose-content ul {
+    display: table;
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+}
+.xinda-choose-content ul li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.xinda-choose-content ul li p {
+    margin: 0;
+}
 
 .container {  /* 因为我们的版心宽度都是1200 都要居中对齐 我们就声明一个公共类 */
 	width: 1366px;
 	margin: 0 auto;
+}
+
+.main-wrap {
+    margin-top: 50px;
+	overflow:hidden;
+	padding-bottom: 60px;
+	margin-bottom:0px;
+}
+
+.main-wrap div{
+	float: left;
+}
+.main-wrap-left{
+	width: 653px;
+	display: table;
+    min-height: 245px;
+	padding-right: 15px;
+    padding-left: 15px;
+}
+
+.main-wrap-left ul {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.main-wrap-left ul li h5 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 15px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+	color:#333333;
+}
+.text-left {
+    text-align: left;
+}
+.text-left p{
+	margin: 0 0 10px;
+	color:#333333;
+	
+}
+.main-wrap-right{
+	width:653px;
+	display: table;
+    min-height: 245px;
+	padding-right: 15px;
+    padding-left: 15px;
+}
+
+.main-wrap-right ul {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+footer {
+	position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0px auto;
+	text-align: center;
+    color: #787878;
+}
+
+.copyright {
+    padding: 16px;
+    text-align: center;
+	height:24px;
+    line-height: 24px;
+    background-color: #2F2F2F;
+    color: #868686;
+    font-size: 12px;
 }
