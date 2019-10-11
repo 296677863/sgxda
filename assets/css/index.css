@@ -125,6 +125,12 @@ nav {
 }
 
 @media (max-width:1366px) {
+
+	.banner{
+
+		height: 370px;
+
+	}
 	.banner ul{
 		width: 4098px;
 		left: -1366px;
