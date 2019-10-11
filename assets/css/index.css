@@ -28,7 +28,7 @@ img {display:block;}
 }
 @media (max-width:1366px) {
     body {width:1366px;}
-	
+
 }
 
 .tophead{
@@ -106,6 +106,118 @@ nav {
 .navbar-collapse li a:hover {
 	background-color:#000;
 	color:#fff
+}
+
+.banner{
+	width: 100%;
+	overflow: hidden;
+	height: 520px;
+	position: relative;
+}
+.banner ul{
+	width: 5760px;
+	position: absolute;
+	top:0px;
+	left: -1920px;
+}
+.banner ul li{
+	float: left;
+}
+
+@media (max-width:1366px) {
+	.banner ul{
+		width: 4098px;
+		left: -1366px;
+	}
+	.banner ul li{
+		width: 1366px;
+	}
+	.banner ul li img{
+		width: 1366px;
+	}
+
+
+}
+
+.arrow div{
+	background: #ffffff;
+	opacity: .3;
+	cursor: pointer;
+	color: #000000;
+	padding: 20px 10px;
+	font-size: 30px;
+	width: 27px;
+	height: 44px;
+	line-height: 44px;
+}
+.prev{
+
+	position: absolute;
+	left: 0px;
+	top: 50%;
+
+
+}
+.next{
+
+	position: absolute;
+	right: 0px;
+	top: 50%;
+
+
+}
+
+.xinda-product{
+	background: #333;
+	padding-bottom: 30px;
+}
+
+.xinda-product .main-title {
+	color: #fff;
+}
+
+.xinda-biz{
+	width: 1366px; /* 宽度暂且定为1366 */
+	margin: 0px auto ; /*  盒子水平居中对齐 */
+	overflow: hidden;
+}
+
+.xinda-biz div{
+	float: left;
+	text-align: justify;
+	padding: 0 20px;
+	color: #fff;
+	margin-left: 10px;
+	width:260px;
+
+
+}
+
+.xinda-biz div>h5{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.xinda-biz div>h5>img{
+	margin: 0 auto;
+}
+
+
+.xinda-biz div>p{
+	margin: 0 0 10px;
+	text-indent: 2em;
+}
+
+
+.main-title {
+	text-align: center;
+	width: 100%;
+	padding: 30px 0;
+}
+
+.main-title .big-title {
+	font-size: 2em;
+	margin: 0 0 10px;
 }
 
 .container {  /* 因为我们的版心宽度都是1200 都要居中对齐 我们就声明一个公共类 */

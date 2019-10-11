@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="思光信达软件">
 	<meta name="description" content="武汉思光信达软件">
-    <title>武汉思光信达</title>
+    <title><!--武汉思光信达--></title>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
    
   
@@ -65,10 +65,120 @@
 		
 		</nav>
 	</header>
-	
+	<div class="banner">
+		
+		<ul>
+			<li><a href=""><img src="assets/images/wangzhan.png"/></a></li>
+			<li><a href=""><img src="assets/images/appzhizuo.png"/></a></li>
+			<li><a href=""><img src="assets/images/fanxaingshuoming.png"/></a></li>
+		</ul>
+
+		<div class="arrow">
+			<div class="next"> > </div>
+			<div class="prev"> < </div>
+		</div>
+
+	</div>
+
+	<div class="xinda-product">
+		<div class="main-title">
+			<p class="big-title">业务介绍</p>
+			<p class="">专业而强大的软件开发团队、丰富的行业经验、精细的服务准则。</p>
+		</div>
+
+		<div class="xinda-biz">
+			<div class="xinda-biz-web">
+				<h5><img src="assets/images/website.png" alt=""></h5>
+				<p>
+					<!-- <a href="/static/templates/sgxda/docs/website/" target="_blank"> -->网站建设;<!-- </a> -->
+					网站形象代表着企业的形象，也是用户了解一个企业的入口，必须要专业。
+				</p>
+			</div>
+
+			<div class="xinda-biz-weixin">
+				<h5><img src="assets/images/weixin.png" alt=""></h5>
+				<p>
+					<!-- <a href="/static/templates/sgxda/docs/weixin/" target="_blank"> -->微信营销平台;<!-- </a> -->
+					针对腾讯微信公共帐号开发，帮助企业实现自媒体营销，打开另一片天空。
+				</p>
+			</div>
+
+			<div class="xinda-biz-app">
+				<h5><img src="assets/images/phone.png" alt=""></h5>
+				<p>
+					<!--  <a href="/static/templates/sgxda/docs/app/" target="_blank"> -->APP应用开发;<!-- </a> -->
+					App开发，是指专注于手机应用
+					软件开发与服务。 针对性在移动互联网
+					抢占先机，夺取市场。
+				</p>
+			</div>
+
+			<div class="xinda-biz-tec">
+				<h5><img src="assets/images/tecsupport.png" alt=""></h5>
+				<p>
+					<!-- <a href="/static/templates/sgxda/docs/tec/" target="_blank"> -->技术支持;<!-- </a> -->
+					为其产品用户提供的售后服务，帮助用户诊断并解决其在使用产品过程中出现的有明显症状的，可能由产品导致的技术问题。
+				</p>
+			</div>
+		</div>
+
+	</div>
 	<div class="recommend container"> <!-- 精品推荐 -->
 		
 	</div>
+
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript">
+        $(function(){
+            $(".banner").hover(function () {
+                $(".arrow div").show()
+            },function () {
+                $(".arrow div").hide()
+            })
+            var index=1
+            $(".next").click(function () {
+                if(!$(".banner ul").is(":animated")) {
+                    index++
+					var width=$(".banner ul li").width();
+                    console.log(width);
+                    if (index>2){
+                        //$(".banner ul").css({left:"0px"})
+                        index=0
+                    }
+
+                    var x=-width*index+"px"
+                    $(".banner ul").animate({left:x}, 500)
+
+                }
+            })
+            $(".prev").click(function () {
+                if (!$(".banner ul").is(":animated")){
+                    index--
+                    if (index<0){
+                        //$(".banner ul").css({left:"-3840px"})
+                        index=2
+                    }
+                    var width=$(".banner ul li").width();
+                    console.log(width);
+                    var x=-width*index+"px"
+                    $(".banner ul").animate({left:x},500)
+                }
+
+            })
+
+
+        });
+
+        $(window).resize(function(){
+
+            location.reload()
+            //这里你可以写你的刷新代码！
+        });
+
+
+
+
+	</script>
 	
 </body>
 </html>
