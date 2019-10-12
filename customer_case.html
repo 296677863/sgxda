@@ -262,7 +262,7 @@
                 window.classie = classie;
             }
 
-            [].slice.call( document.querySelectorAll( '.case-show > li > figure' ) ).forEach( function( el, i ) {
+            [].slice.call( document.querySelectorAll( '.case-show figure' ) ).forEach( function( el, i ) {
                 debugger
                 el.querySelector( 'figcaption > a' ).addEventListener( 'touchstart', function(e) {
                     e.stopPropagation();
