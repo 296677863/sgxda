@@ -1,0 +1,107 @@
+
+.newsbox{
+	padding-top: 30px;
+	
+}
+
+.newsbox .title_box {
+    text-align: center;
+	
+}
+
+.newsbox .title_box .h2 {
+    font-size: 30px;
+    color: #1a1b19;
+    margin: 10px 0;
+	
+}
+
+.newsbox.title_box p {
+    font-size: 16px;
+    color: #999;
+	
+}
+.newsbox .group1{
+    text-align: center;
+    padding: 26px 0 11px 0;
+	
+}
+
+.newsbox .group1 a:hover, .newsbox.group1 a.cur {
+    background:#1a1b19;
+    color: #fff;
+}
+
+.newsbox .group1 a {
+    display: inline-block;
+    margin: 0 6px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    background:#f5f5f5;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.5s linear;
+    -moz-transition: border-color 0.5s;
+    -webkit-transition: border-color 0.5s linear;
+    -o-transition: border-color 0.5s;
+    margin-bottom: 15px;
+}
+
+.newsbox .news {
+    margin-top: 32px;
+	
+}
+
+.newsbox .news li {
+    padding: 0 35px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 30px;
+    margin-bottom: 34px;
+}
+
+.newsbox .news li span.day {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 60px;
+    margin-top: 15px;
+	
+}
+
+.newsbox .news li span.day b {
+    font-size: 48px;
+    color: #666;
+}
+
+.newsbox .news li span.day i {
+    display: block;
+    font-style: normal;
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.newsbox .news li .text_right {
+    float: right;
+    width: 1200px;
+	margin-top: 25px;
+	
+}
+
+.newsbox .news li .text_right .h5 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 9px;
+    height: 21px;
+    overflow: hidden;
+}
+
+.newsbox .news li .text_right p {
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+    height: 48px;
+    overflow: hidden;
+}

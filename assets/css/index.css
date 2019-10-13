@@ -151,6 +151,15 @@ nav {
 	.banner .s_images li img{
 		width: 1366px;
 	}
+	
+	.cases_banner img{
+		width: 1366px;
+		
+	}
+	
+	.cases_banner img{
+		width: 1366px;
+	}
 
 
 }
@@ -190,6 +199,14 @@ nav {
     font-weight: normal;
 
 
+}
+
+.cases_banner img{
+		width: 100%;
+		
+}
+.about_banner img{
+	width: 100%;
 }
 .banner .circle {
     width: 68px;
@@ -413,4 +430,40 @@ footer {
     background-color: #2F2F2F;
     color: #868686;
     font-size: 12px;
+}
+
+.main-content{
+ padding-bottom:70px;
+ 
+}
+.pagination{
+ 
+  height:50px;
+  line-height:50px;
+  text-align:center;
+}
+
+.pagination  li{
+  display:inline-block;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 5px 12px;
+  margin: 2px;
+  color: black;
+  border: 1px solid lightgray;
+
+}
+
+.pagination a:hover{
+  background: #CCCCCC;
+}
+
+.pagination a.cur{
+
+  background: #4CAF50;
+
+  color: #FFFFFF;
+
 }
