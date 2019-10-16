@@ -1,0 +1,41 @@
+.sgxda_article{
+    min-height: 500px;
+}
+
+.sgxda_article_l{
+    width: 75%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+}
+.sgxda_article_r{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.sgxda-article-title {
+    font-size: 25px;
+    line-height: 1.15;
+    font-weight: 400;
+    margin: 16px 10px 16px 10px;
+    box-sizing: border-box;
+}
+
+.sgxda-article-meta {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #999;
+    margin: 16px 10px 16px 10px;
+}
+
+.sgxda-article-bd{
+    margin: 16px 10px 16px 10px;
+    letter-spacing:1px;
+    font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+    font-weight:normal;
+
+}
+
+
